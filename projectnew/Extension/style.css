@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    width: 320px; /* Wider for a better feel */
+    margin: 0;
+    padding: 20px;
+    background: #0f172a; /* Deep space blue */
+    color: #f8fafc;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #38bdf8; /* Cyber blue */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
+}
+
+#resultBox {
+    margin-top: 25px;
+    padding: 15px;
+    background: rgba(30, 41, 59, 0.7);
+    border-radius: 12px;
+    border: 1px solid #334155;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+.hidden { display: none; }
+
+#verdict {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+/* Verdict Colors */
+.safe { color: #22c55e; text-shadow: 0 0 10px rgba(34, 197, 94, 0.5); }
+.danger { color: #ef4444; text-shadow: 0 0 10px rgba(239, 68, 68, 0.5); }
+.warning { color: #f59e0b; text-shadow: 0 0 10px rgba(245, 158, 11, 0.5); }
+
+#confidence {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 0.8rem;
+    color: #38bdf8;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+#riskList {
+    padding-left: 20px;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+#riskList li { margin-bottom: 5px; }
